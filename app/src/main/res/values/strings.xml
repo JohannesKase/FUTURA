@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">capstone_project</string>
+    <string name="accent">accent</string>
+    <string name="app_title">FUTURA</string>
+    <string name="logo">Logo</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt massa libero ut dignissim. Aliquet ut et cum semper vitae vivamus.</string>
+    <string name="nilai">Masukkan Nilai</string>
+    <string name="kampus1">Masukkan Kampus Pilihan Pertama</string>
+    <string name="tb_hitung">Hitung</string>
+    <string name="kampus2">Masukkan Kampus Pilihan Kedua</string>
+    <string name="logotext">logotext</string>
+</resources>

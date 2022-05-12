@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nilai">Masukkan Nilai</string>
+    <string name="tb_hitung">Hitung</string>
+    <string name="kampus2">Masukkan Kampus Pilihan Kedua</string>
+</resources>
