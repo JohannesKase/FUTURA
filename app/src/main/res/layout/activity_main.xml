@@ -99,7 +99,8 @@
                 android:autofillHints="Nilai"
                 android:background="@drawable/rounded_edittext"
                 android:inputType="number"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
 
             <TextView
                 android:id="@+id/tv_kampus1"
@@ -124,7 +125,8 @@
                 android:autofillHints="Nilai"
                 android:background="@drawable/rounded_edittext"
                 android:inputType="number"
-                android:textSize="24sp"/>
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
 
             <TextView
                 android:id="@+id/tv_kampus2"
@@ -149,7 +151,8 @@
                 android:autofillHints="Nilai"
                 android:background="@drawable/rounded_edittext"
                 android:inputType="number"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
 
             <Button
                 android:layout_width="160dp"

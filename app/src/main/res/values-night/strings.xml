@@ -4,4 +4,5 @@
     <string name="tb_hitung">Hitung</string>
     <string name="kampus2">Masukkan Kampus Pilihan Kedua</string>
     <string name="result">Tingkat kemungkinan anda diterima di Kampus %inputHigh lebih tinggi dari pada Kampus %inputLow, dengan persentase %percentHigh untuk Kampus %inputHigh dan %percentLow untuk kampus %inputHigh.</string>
+    <string name="logo_splash">Logo Splash</string>
 </resources>
