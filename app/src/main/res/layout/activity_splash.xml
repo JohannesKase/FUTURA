@@ -7,7 +7,7 @@
     tools:context=".SplashActivity"
     android:background="@color/blue">
 
-    <!--Accent-->
+<!--Accent-->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -36,5 +36,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/logo_splash" />
 </androidx.constraintlayout.widget.ConstraintLayout>

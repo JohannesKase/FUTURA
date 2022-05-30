@@ -99,7 +99,8 @@
                 android:autofillHints="Nilai"
                 android:background="@drawable/rounded_edittext"
                 android:inputType="number"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
 
             <TextView
                 android:id="@+id/tv_kampus1"
@@ -124,7 +125,8 @@
                 android:autofillHints="Nilai"
                 android:background="@drawable/rounded_edittext"
                 android:inputType="number"
-                android:textSize="24sp"/>
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
 
             <TextView
                 android:id="@+id/tv_kampus2"
@@ -149,7 +151,8 @@
                 android:autofillHints="Nilai"
                 android:background="@drawable/rounded_edittext"
                 android:inputType="number"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
 
             <Button
                 android:layout_width="160dp"
@@ -178,7 +181,7 @@
         android:layout_height="64dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_begin="75dp"
+        app:layout_constraintGuide_percent="0.08417509"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
