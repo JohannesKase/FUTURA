@@ -7,7 +7,7 @@
     tools:context=".MainActivity"
     android:background="@color/blue">
 
-<!--Accent-->
+    <!--Accent-->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -18,18 +18,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<!--Logo-->
+    <!--Logo-->
     <ImageView
         android:id="@+id/logo_img"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginTop="60dp"
         android:contentDescription="@string/logo"
         android:src="@drawable/logoimg"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal2" />
 
-<!--Title-->
     <ImageView
         android:id="@+id/logo_text"
         android:layout_width="match_parent"
@@ -41,139 +42,15 @@
         android:layout_marginTop="20dp"
         android:contentDescription="@string/logotext" />
 
-
-<!--CardView-->
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginEnd="26dp"
-        android:text="@string/lorem"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_text"
-        android:layout_marginTop="30dp"/>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/materialCardView"
-        style="@style/CustomCardViewStyle"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" >
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_nilai"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="26dp"
-                android:text="@string/nilai"
-                android:textColor="@color/blue"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/et_nilai"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_nilai"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="26dp"
-                android:autofillHints="Nilai"
-                android:background="@drawable/rounded_edittext"
-                android:inputType="number"
-                android:textSize="24sp"
-                tools:ignore="LabelFor" />
-
-            <TextView
-                android:id="@+id/tv_kampus1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/et_nilai"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="26dp"
-                android:text="@string/kampus1"
-                android:textColor="@color/blue"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/et_kampus1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_kampus1"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="26dp"
-                android:autofillHints="Nilai"
-                android:background="@drawable/rounded_edittext"
-                android:inputType="number"
-                android:textSize="24sp"
-                tools:ignore="LabelFor" />
-
-            <TextView
-                android:id="@+id/tv_kampus2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/et_kampus1"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="26dp"
-                android:text="@string/kampus2"
-                android:textColor="@color/blue"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/et_kampus2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_kampus2"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="26dp"
-                android:autofillHints="Nilai"
-                android:background="@drawable/rounded_edittext"
-                android:inputType="number"
-                android:textSize="24sp"
-                tools:ignore="LabelFor" />
-
-            <Button
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/et_kampus2"
-                android:layout_marginStart="120dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="120dp"
-                android:text="@string/tb_hitung" />
-        </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
-
     <!--GuideLine-->
-<!--    <androidx.constraintlayout.widget.Guideline-->
-<!--        android:id="@+id/guidelineHorizontal"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="64dp"-->
-<!--        android:orientation="horizontal"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintGuide_end="571dp"-->
-<!--        app:layout_constraintStart_toStartOf="parent" />-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_end="571dp"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineHorizontal2"

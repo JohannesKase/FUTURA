@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreSoshumActivity"
+    android:background="@color/blue">
+    <!--CardView-->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        style="@style/CustomCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--score1-->
+
+            <TextView
+                android:id="@+id/tv_score1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="26dp"
+                android:text="@string/masukkan_nilai_sosiologi"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_score1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_score1"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="26dp"
+                android:autofillHints=".."
+                android:background="@drawable/rounded_edittext"
+                android:inputType="number"
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
+
+            <!--score2-->
+            <TextView
+                android:id="@+id/tv_score2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_score1"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="26dp"
+                android:text="@string/masukkan_nilai_sejarah"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_score2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_score2"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="26dp"
+                android:autofillHints=".."
+                android:background="@drawable/rounded_edittext"
+                android:inputType="number"
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
+
+            <!--score3-->
+            <TextView
+                android:id="@+id/tv_score3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_score2"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="26dp"
+                android:text="@string/masukkan_nilai_geografi"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_score3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_score3"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="26dp"
+                android:autofillHints=".."
+                android:background="@drawable/rounded_edittext"
+                android:inputType="number"
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
+
+            <!--score4-->
+            <TextView
+                android:id="@+id/tv_score4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_score3"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="26dp"
+                android:text="@string/masukkan_nilai_ekonomi"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_score4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_score4"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="26dp"
+                android:autofillHints=".."
+                android:background="@drawable/rounded_edittext"
+                android:inputType="number"
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
+
+            <!--score5-->
+            <TextView
+                android:id="@+id/tv_score5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_score4"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="26dp"
+                android:text="@string/masukkan_nilai_reading_comprehension_writing_for_science"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_score5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_score5"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="26dp"
+                android:autofillHints=".."
+                android:background="@drawable/rounded_edittext"
+                android:inputType="number"
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
+
+            <!--score6-->
+            <TextView
+                android:id="@+id/tv_score6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_score5"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="26dp"
+                android:text="@string/masukkan_nilai_general_reasoning_for_science"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_score6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_score6"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="26dp"
+                android:autofillHints=".."
+                android:background="@drawable/rounded_edittext"
+                android:inputType="number"
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
+
+            <!--score7-->
+            <TextView
+                android:id="@+id/tv_score7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_score6"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="26dp"
+                android:text="@string/masukkan_nilai_quantitative_skills_for_science"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_score7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_score7"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="26dp"
+                android:autofillHints=".."
+                android:background="@drawable/rounded_edittext"
+                android:inputType="number"
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
+
+            <!--score8-->
+            <TextView
+                android:id="@+id/tv_score8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_score7"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="26dp"
+                android:text="@string/masukkan_nilai_general_knowledge_understanding_for_science"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/et_score8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_score8"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="26dp"
+                android:autofillHints=".."
+                android:background="@drawable/rounded_edittext"
+                android:inputType="number"
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_score8"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="120dp"
+                android:layout_marginBottom="40dp"
+                android:text="@string/tb_hitung" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
