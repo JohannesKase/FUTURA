@@ -5,17 +5,4 @@
     <string name="kampus2">Masukkan Kampus Pilihan Kedua</string>
     <string name="result">Tingkat kemungkinan anda diterima di Kampus %inputHigh lebih tinggi dari pada Kampus %inputLow, dengan persentase %percentHigh untuk Kampus %inputHigh dan %percentLow untuk kampus %inputHigh.</string>
     <string name="logo_splash">Logo Splash</string>
-    <string name="nama_universitas">Masukkan Nama Universitas</string>
-    <string name="nama_jurusan">Masukkan Jurusan</string>
-    <string name="masukkan_nilai_biologi">Masukkan Nilai Biologi</string>
-    <string name="masukkan_nilai_fisika">Masukkan Nilai Fisika</string>
-    <string name="masukkan_nilai_kimia">Masukkan Nilai Kimia</string>
-    <string name="masukkan_nilai_matematika">Masukkan Nilai Matematika</string>
-    <string name="masukkan_nilai_general_reasoning_for_science">Masukkan Nilai General Reasoning for Science</string>
-    <string name="masukkan_nilai_quantitative_skills_for_science">Masukkan Nilai Quantitative Skills for Science</string>
-    <string name="masukkan_nilai_general_knowledge_understanding_for_science"><![CDATA[Masukkan Nilai General Knowledge & Understanding for Science]]></string>
-    <string name="masukkan_nilai_sosiologi">Masukkan Nilai Sosiologi</string>
-    <string name="masukkan_nilai_sejarah">Masukkan Nilai Sejarah</string>
-    <string name="masukkan_nilai_geografi">Masukkan Nilai Geografi</string>
-    <string name="masukkan_nilai_ekonomi">Masukkan Nilai Ekonomi</string>
 </resources>
