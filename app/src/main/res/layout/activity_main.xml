@@ -42,6 +42,78 @@
         android:layout_marginTop="20dp"
         android:contentDescription="@string/logotext" />
 
+    <!--CardView-->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        style="@style/CustomCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvPilihBidang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="Pilih Bidang"
+                style="@style/TextContent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imgSaintek"
+                android:layout_width="200dp"
+                android:layout_height="360dp"
+                android:layout_gravity="left"
+                android:background="@drawable/ic_saintek"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvSaintek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Saintek"
+                style="@style/TextContent"
+                app:layout_constraintEnd_toEndOf="@+id/imgSaintek"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgSaintek" />
+
+            <ImageButton
+                android:id="@+id/imgSoshum"
+                android:layout_width="200dp"
+                android:layout_height="360dp"
+                android:layout_gravity="right"
+                android:background="@drawable/ic_soshum"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvSoshum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Soshum"
+                style="@style/TextContent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgSaintek"
+                app:layout_constraintTop_toBottomOf="@+id/imgSoshum" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
     <!--GuideLine-->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineHorizontal"
