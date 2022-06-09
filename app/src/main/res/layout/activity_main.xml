@@ -49,10 +49,12 @@
         style="@style/CustomCardViewStyle"
         android:layout_width="match_parent"
         android:layout_height="450dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_img">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -60,12 +62,12 @@
 
             <TextView
                 android:id="@+id/tvPilihBidang"
+                style="@style/TextContent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
                 android:text="Pilih Bidang"
-                style="@style/TextContent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -81,11 +83,11 @@
 
             <TextView
                 android:id="@+id/tvSaintek"
+                style="@style/TextContent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="Saintek"
-                style="@style/TextContent"
                 app:layout_constraintEnd_toEndOf="@+id/imgSaintek"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imgSaintek" />
@@ -101,11 +103,11 @@
 
             <TextView
                 android:id="@+id/tvSoshum"
+                style="@style/TextContent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="Soshum"
-                style="@style/TextContent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imgSaintek"
                 app:layout_constraintTop_toBottomOf="@+id/imgSoshum" />
