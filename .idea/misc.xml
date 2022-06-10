@@ -16,10 +16,12 @@
         <entry key="..\:/Android Studio/Kotlin/capstone_project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1895" />
         <entry key="..\:/Users/HP/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.29322916666666665" />
         <entry key="..\:/Users/HP/Desktop/FUTURA/app/src/main/res/drawable/gradient_spinner.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Desktop/FUTURA/app/src/main/res/drawable/rounded_edittext.xml" value="0.283" />
         <entry key="..\:/Users/HP/Desktop/FUTURA/app/src/main/res/layout/activity_data.xml" value="0.22" />
         <entry key="..\:/Users/HP/Desktop/FUTURA/app/src/main/res/layout/activity_main.xml" value="0.29322916666666665" />
-        <entry key="..\:/Users/HP/Desktop/FUTURA/app/src/main/res/layout/activity_score_soshum.xml" value="0.1390625" />
-        <entry key="..\:/Users/HP/Desktop/FUTURA/app/src/main/res/layout/activity_scorescientek.xml" value="0.29322916666666665" />
+        <entry key="..\:/Users/HP/Desktop/FUTURA/app/src/main/res/layout/activity_score_soshum.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Desktop/FUTURA/app/src/main/res/layout/activity_scorescientek.xml" value="0.22" />
+        <entry key="..\:/Users/HP/Desktop/FUTURA/app/src/main/res/layout/popup.xml" value="0.29791666666666666" />
         <entry key="..\:/Users/HP/Desktop/FUTURA/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.149" />
       </map>
     </option>

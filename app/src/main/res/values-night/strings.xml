@@ -3,7 +3,7 @@
     <string name="nilai">Masukkan Nilai</string>
     <string name="tb_hitung">Hitung</string>
     <string name="kampus2">Masukkan Kampus Pilihan Kedua</string>
-    <string name="result">Tingkat kemungkinan anda diterima di Kampus %inputHigh lebih tinggi dari pada Kampus %inputLow, dengan persentase %percentHigh untuk Kampus %inputHigh dan %percentLow untuk kampus %inputHigh.</string>
+    <string name="result">Persentase Anda diterima di %1$s dengan jurusan %2$s adalah %3$s!!</string>
     <string name="logo_splash">Logo Splash</string>
     <string name="nama_universitas">Masukkan Nama Universitas</string>
     <string name="nama_jurusan">Masukkan Jurusan</string>
@@ -18,4 +18,5 @@
     <string name="masukkan_nilai_sejarah">Masukkan Nilai Sejarah</string>
     <string name="masukkan_nilai_geografi">Masukkan Nilai Geografi</string>
     <string name="masukkan_nilai_ekonomi">Masukkan Nilai Ekonomi</string>
+    <string name="hasil">%1s</string>
 </resources>

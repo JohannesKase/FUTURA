@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
+
 class DataActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -108,9 +109,14 @@ class DataActivity : AppCompatActivity() {
                     }
                 }
             }
+
             val buttonLanjutSaintek = findViewById<Button>(R.id.btnLanjut)
             buttonLanjutSaintek.setOnClickListener {
+                var dataUni = spinner.selectedItem.toString()
+                var dataJurusan = spinnerJurusan.selectedItem.toString()
                 val intent = Intent(this, ScoreScientekActivity::class.java)
+                intent.putExtra(ScoreSoshumActivity.EXTRA_UNI, dataUni)
+                intent.putExtra(ScoreSoshumActivity.EXTRA_JURUSAN, dataJurusan)
                 startActivity(intent)
             }
         }
@@ -118,7 +124,12 @@ class DataActivity : AppCompatActivity() {
         if (soshum == 1) {
             //Spinner Universitas
             var items =
-                arrayOf("Pilih Universitas", "Universitas A", "Universitas B", "Universitas C")
+                arrayOf(
+                    "Pilih Universitas",
+                    "Universitas Syiah Kuala",
+                    "Universitas Negeri Medan",
+                    "Universitas Indonesia"
+                )
             val spinner: Spinner = findViewById(R.id.uni_spinner)
             val spinnerAdapter =
                 object : ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, items) {
@@ -158,9 +169,8 @@ class DataActivity : AppCompatActivity() {
                     }
                 }
             }
-
             //Spinner Jurusan
-            var item = arrayOf("Pilih Jurusan", "A", "B", "C")
+            var item = arrayOf("Pilih Jurusan", "Ekonomi Pembangunan", "Manajemen", "Akutansi")
             val spinnerJurusan: Spinner = findViewById(R.id.jurusan_spinner)
             val spinnerAdapters =
                 object : ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, item) {
@@ -200,10 +210,13 @@ class DataActivity : AppCompatActivity() {
                     }
                 }
             }
-
             val buttonLanjutSoshum = findViewById<Button>(R.id.btnLanjut)
             buttonLanjutSoshum.setOnClickListener {
+                var dataUni = spinner.selectedItem.toString()
+                var dataJurusan = spinnerJurusan.selectedItem.toString()
                 val intent = Intent(this, ScoreSoshumActivity::class.java)
+                intent.putExtra(ScoreSoshumActivity.EXTRA_UNI, dataUni)
+                intent.putExtra(ScoreSoshumActivity.EXTRA_JURUSAN, dataJurusan)
                 startActivity(intent)
             }
         }
