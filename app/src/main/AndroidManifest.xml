@@ -13,6 +13,9 @@
             android:name=".ScoreScientekActivity"
             android:exported="false" />
         <activity
+            android:name=".ScoreSoshumActivity"
+            android:exported="false" />
+        <activity
             android:name=".DataActivity"
             android:exported="false" />
         <activity

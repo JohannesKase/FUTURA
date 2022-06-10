@@ -46,18 +46,17 @@
 
     <!--CardView-->
 
-    <!--GuideLine-->
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
         style="@style/CustomCardViewStyle"
         android:layout_width="match_parent"
-        android:layout_height="410dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_text">
+        app:layout_constraintTop_toBottomOf="@+id/logo_text"
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -81,6 +80,7 @@
                 android:layout_height="360dp"
                 android:layout_gravity="left"
                 android:background="@drawable/ic_saintek"
+                android:onClick="onClickSaintek"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -101,6 +101,7 @@
                 android:layout_height="360dp"
                 android:layout_gravity="right"
                 android:background="@drawable/ic_soshum"
+                android:onClick="onClickSoshum"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
