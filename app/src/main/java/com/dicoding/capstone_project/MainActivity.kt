@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickLogout(view: View) {
-        val intent = Intent(this, DataActivity::class.java)
+        val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
 

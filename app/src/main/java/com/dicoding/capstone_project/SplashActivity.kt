@@ -1,8 +1,8 @@
 package com.dicoding.capstone_project
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.delay
@@ -16,7 +16,7 @@ class SplashActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             delay(3000)
-            startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+            startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
             finish()
         }
     }
