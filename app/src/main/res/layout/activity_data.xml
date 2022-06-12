@@ -7,7 +7,43 @@
     tools:context=".DataActivity"
     android:background="@color/blue">
 
-<!--CardView-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:contentDescription="@string/accent"
+        android:src="@drawable/acent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Logo-->
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="2dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logoimg"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo_text"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="-8dp"
+
+        android:contentDescription="@string/logotext"
+        android:src="@drawable/logotext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_img" />
+
+    <!--CardView
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
@@ -33,13 +69,12 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="26dp"
                 android:text="@string/nama_universitas"
-                android:textColor="@color/blue"
-                android:textSize="16sp" />
+                style="@style/TextContent"/>
 
             <EditText
                 android:id="@+id/et_universitas"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="26dp"
                 android:layout_below="@+id/tv_universitas"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="5dp"
@@ -47,7 +82,7 @@
                 android:autofillHints="Universitas Sample"
                 android:background="@drawable/rounded_edittext"
                 android:inputType="text"
-                android:textSize="24sp"
+                android:textSize="16sp"
                 tools:ignore="LabelFor" />
 
             <TextView
@@ -86,7 +121,7 @@
                 android:layout_marginBottom="50dp"
                 android:text="@string/tb_hitung" />
         </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.card.MaterialCardView>-->
 
     <!--GuideLine-->
     <!--    <androidx.constraintlayout.widget.Guideline-->
@@ -97,6 +132,81 @@
     <!--        app:layout_constraintEnd_toEndOf="parent"-->
     <!--        app:layout_constraintGuide_end="571dp"-->
     <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        style="@style/CustomCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_text"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_universitas"
+                style="@style/TextContent"
+                android:layout_width="205dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/nama_universitas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/uni_spinner"
+                style="@style/spinner_style"
+                android:dropDownSelector="@color/lightgrey"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_universitas" />
+
+            <TextView
+                android:id="@+id/tv_jurusan"
+                style="@style/TextContent"
+                android:layout_width="205dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/nama_jurusan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/uni_spinner" />
+
+            <Spinner
+                android:id="@+id/jurusan_spinner"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_jurusan" />
+
+            <Button
+                android:id="@+id/btnLanjut"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="90dp"
+                android:text="Lanjut"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/jurusan_spinner" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineHorizontal2"
@@ -111,9 +221,11 @@
         android:id="@+id/guidelineVertical"
         android:layout_width="wrap_content"
         android:layout_height="64dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintGuide_percent="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

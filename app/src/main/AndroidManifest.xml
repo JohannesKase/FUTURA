@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Capstone_project">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".ScoreScientekActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScoreSoshumActivity"
             android:exported="false" />
         <activity
             android:name=".DataActivity"

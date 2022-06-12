@@ -6,250 +6,267 @@
     android:layout_height="match_parent"
     tools:context=".ScoreSoshumActivity"
     android:background="@color/blue">
-    <!--CardView-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:contentDescription="@string/accent"
+        android:src="@drawable/acent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
         style="@style/CustomCardViewStyle"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="620dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
 
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <!--score1-->
+            android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tv_score1"
+                android:id="@+id/tv_sosiologi"
+                style="@style/TextContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="26dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="26dp"
                 android:text="@string/masukkan_nilai_sosiologi"
-                android:textColor="@color/blue"
-                android:textSize="16sp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/et_score1"
+                android:id="@+id/et_sosiologi"
+                style="@style/TextInput"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="35dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_score1"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="26dp"
                 android:autofillHints=".."
                 android:background="@drawable/rounded_edittext"
                 android:inputType="number"
-                android:textSize="24sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_sosiologi"
                 tools:ignore="LabelFor" />
 
-            <!--score2-->
             <TextView
-                android:id="@+id/tv_score2"
+                android:id="@+id/tv_sejarah"
+                style="@style/TextContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/et_score1"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="26dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/masukkan_nilai_sejarah"
-                android:textColor="@color/blue"
-                android:textSize="16sp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_sosiologi" />
 
             <EditText
-                android:id="@+id/et_score2"
+                android:id="@+id/et_sejarah"
+                style="@style/TextInput"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="35dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_score2"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="26dp"
                 android:autofillHints=".."
                 android:background="@drawable/rounded_edittext"
                 android:inputType="number"
-                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_sejarah"
                 tools:ignore="LabelFor" />
 
-            <!--score3-->
             <TextView
-                android:id="@+id/tv_score3"
+                android:id="@+id/tv_geografi"
+                style="@style/TextContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/et_score2"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="26dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/masukkan_nilai_geografi"
-                android:textColor="@color/blue"
-                android:textSize="16sp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_sejarah" />
 
             <EditText
-                android:id="@+id/et_score3"
+                android:id="@+id/et_geografi"
+                style="@style/TextInput"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_score3"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="26dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
                 android:autofillHints=".."
                 android:background="@drawable/rounded_edittext"
                 android:inputType="number"
-                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_geografi"
                 tools:ignore="LabelFor" />
 
-            <!--score4-->
             <TextView
-                android:id="@+id/tv_score4"
+                android:id="@+id/tv_ekonomi"
+                style="@style/TextContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/et_score3"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="26dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/masukkan_nilai_ekonomi"
-                android:textColor="@color/blue"
-                android:textSize="16sp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_geografi" />
 
             <EditText
-                android:id="@+id/et_score4"
+                android:id="@+id/et_ekonomi"
+                style="@style/TextInput"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="35dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_score4"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="26dp"
                 android:autofillHints=".."
                 android:background="@drawable/rounded_edittext"
                 android:inputType="number"
-                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ekonomi"
                 tools:ignore="LabelFor" />
 
-            <!--score5-->
             <TextView
-                android:id="@+id/tv_score5"
+                android:id="@+id/tv_reading"
+                style="@style/TextContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/et_score4"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="26dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/masukkan_nilai_reading_comprehension_writing_for_science"
-                android:textColor="@color/blue"
-                android:textSize="16sp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_ekonomi" />
 
             <EditText
-                android:id="@+id/et_score5"
+                android:id="@+id/et_reading"
+                style="@style/TextInput"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="35dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_score5"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="26dp"
                 android:autofillHints=".."
                 android:background="@drawable/rounded_edittext"
                 android:inputType="number"
-                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_reading"
                 tools:ignore="LabelFor" />
 
-            <!--score6-->
             <TextView
-                android:id="@+id/tv_score6"
+                android:id="@+id/tv_general_reasoning"
+                style="@style/TextContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/et_score5"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="26dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/masukkan_nilai_general_reasoning_for_science"
-                android:textColor="@color/blue"
-                android:textSize="16sp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_reading" />
 
             <EditText
-                android:id="@+id/et_score6"
+                android:id="@+id/et_general_reasoning"
+                style="@style/TextInput"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="35dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_score6"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="26dp"
                 android:autofillHints=".."
                 android:background="@drawable/rounded_edittext"
                 android:inputType="number"
-                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_general_reasoning"
                 tools:ignore="LabelFor" />
 
-            <!--score7-->
             <TextView
-                android:id="@+id/tv_score7"
+                android:id="@+id/tv_quantitative"
+                style="@style/TextContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/et_score6"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="26dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/masukkan_nilai_quantitative_skills_for_science"
-                android:textColor="@color/blue"
-                android:textSize="16sp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_general_reasoning" />
 
             <EditText
-                android:id="@+id/et_score7"
+                android:id="@+id/et_quantitative"
+                style="@style/TextInput"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="35dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_score7"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="26dp"
                 android:autofillHints=".."
                 android:background="@drawable/rounded_edittext"
                 android:inputType="number"
-                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_quantitative"
                 tools:ignore="LabelFor" />
 
-            <!--score8-->
             <TextView
-                android:id="@+id/tv_score8"
+                android:id="@+id/tv_general_knowledge"
+                style="@style/TextContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/et_score7"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="26dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/masukkan_nilai_general_knowledge_understanding_for_science"
-                android:textColor="@color/blue"
-                android:textSize="16sp" />
-
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_quantitative" />
 
             <EditText
-                android:id="@+id/et_score8"
+                android:id="@+id/et_general_knowledge"
+                style="@style/TextInput"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="35dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_score8"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="26dp"
                 android:autofillHints=".."
                 android:background="@drawable/rounded_edittext"
                 android:inputType="number"
-                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_general_knowledge"
                 tools:ignore="LabelFor" />
 
             <Button
+                android:id="@+id/btnLanjutSoshum"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/et_score8"
                 android:layout_marginStart="120dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="120dp"
-                android:layout_marginBottom="40dp"
-                android:text="@string/tb_hitung" />
-        </RelativeLayout>
+                android:layout_marginTop="10dp"
+                android:text="Lanjut"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_general_knowledge"
+                android:onClick="onClickScoreSoshum" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

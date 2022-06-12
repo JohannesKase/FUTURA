@@ -8,15 +8,19 @@
     android:background="@color/blue">
 
 <!--Accent-->
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="230dp"
+        android:layout_marginTop="4dp"
         android:contentDescription="@string/accent"
         android:src="@drawable/acent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
@@ -30,12 +34,12 @@
 
 <!--Logo-->
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="0dp"
+        android:layout_width="209dp"
+        android:layout_height="886dp"
+        android:contentDescription="@string/logo_splash"
         android:src="@drawable/logotextimg2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/logo_splash" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

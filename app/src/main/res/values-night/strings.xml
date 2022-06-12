@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Futura</string>
+    <string name="accent">accent</string>
+    <string name="app_title">FUTURA</string>
+    <string name="logo">Logo</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt massa libero ut dignissim. Aliquet ut et cum semper vitae vivamus.</string>
     <string name="nilai">Masukkan Nilai</string>
+    <string name="kampus1">Masukkan Kampus Pilihan Pertama</string>
     <string name="tb_hitung">Hitung</string>
     <string name="kampus2">Masukkan Kampus Pilihan Kedua</string>
-    <string name="result">Tingkat kemungkinan anda diterima di Kampus %inputHigh lebih tinggi dari pada Kampus %inputLow, dengan persentase %percentHigh untuk Kampus %inputHigh dan %percentLow untuk kampus %inputHigh.</string>
+    <string name="logotext">logotext</string>
+    <string name="result">Persentase Anda diterima di %1$s dengan jurusan %2$s adalah %3$s!!</string>
     <string name="logo_splash">Logo Splash</string>
     <string name="nama_universitas">Masukkan Nama Universitas</string>
     <string name="nama_jurusan">Masukkan Jurusan</string>
@@ -11,6 +18,7 @@
     <string name="masukkan_nilai_fisika">Masukkan Nilai Fisika</string>
     <string name="masukkan_nilai_kimia">Masukkan Nilai Kimia</string>
     <string name="masukkan_nilai_matematika">Masukkan Nilai Matematika</string>
+    <string name="masukkan_nilai_reading_comprehension_writing_for_science"><![CDATA[Masukkan Nilai Reading Comprehension & Writing for Science]]></string>
     <string name="masukkan_nilai_general_reasoning_for_science">Masukkan Nilai General Reasoning for Science</string>
     <string name="masukkan_nilai_quantitative_skills_for_science">Masukkan Nilai Quantitative Skills for Science</string>
     <string name="masukkan_nilai_general_knowledge_understanding_for_science"><![CDATA[Masukkan Nilai General Knowledge & Understanding for Science]]></string>
@@ -18,4 +26,14 @@
     <string name="masukkan_nilai_sejarah">Masukkan Nilai Sejarah</string>
     <string name="masukkan_nilai_geografi">Masukkan Nilai Geografi</string>
     <string name="masukkan_nilai_ekonomi">Masukkan Nilai Ekonomi</string>
+    <string name="hasil">%1s</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be 6 or more characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>

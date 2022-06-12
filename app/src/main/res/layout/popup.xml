@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="340dp"
-    android:layout_height="626dp"
+    android:layout_height="wrap_content"
     android:layout_gravity="center"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -12,37 +12,67 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/background"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:adjustViewBounds="true"
-            app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="313dp"
+            android:layout_height="210dp"
             android:layout_margin="15dp"
+            android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:src="@color/blue"
-            app:shapeAppearanceOverlay="@style/roundedimageview"/>
+            app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.64"
+            app:shapeAppearanceOverlay="@style/roundedimageview" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tv_persentase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Persentase"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/background"
+            app:layout_constraintHorizontal_bias="0.519"
+            app:layout_constraintStart_toStartOf="@+id/background"
+            app:layout_constraintTop_toTopOf="@+id/background" />
+
+        <TextView
+            android:id="@+id/tv_hasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/hasil"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toEndOf="@+id/background"
+            app:layout_constraintHorizontal_bias="0.519"
+            app:layout_constraintStart_toStartOf="@+id/background"
+            app:layout_constraintTop_toBottomOf="@+id/tv_persentase" />
+
+        <TextView
+            android:id="@+id/tv_deskripsi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
+            android:layout_marginTop="12dp"
             android:text="@string/result"
             android:textColor="@color/blue"
             android:textSize="14sp"
             app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal2"
-            tools:layout_editor_absoluteX="15dp" />
+            tools:layout_editor_absoluteX="-8dp" />
 
         <Button
+            android:id="@+id/btn_kembali"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:text="@string/tb_hitung"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="20dp"
+            android:text="Kembali"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginBottom="50dp"/>
+            app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineHorizontal2"
@@ -50,7 +80,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintGuide_percent="0.6"
+            app:layout_constraintGuide_percent="0.54"
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
