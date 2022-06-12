@@ -19,8 +19,8 @@ class ScoreScientekActivity : AppCompatActivity() {
     fun getPopUp(view: View) {
         val namaUni = intent.getStringExtra(EXTRA_UNI) as String
         val namaJurusan = intent.getStringExtra(EXTRA_JURUSAN) as String
-        Log.d("IKAN", namaUni)
-        Log.d("IKAN", namaJurusan)
+        Log.d("", namaUni)
+        Log.d("", namaJurusan)
         var MyLayout = layoutInflater.inflate(R.layout.popup, null)
         val myDialogBuilder = AlertDialog.Builder(this).apply {
             setView(MyLayout)
